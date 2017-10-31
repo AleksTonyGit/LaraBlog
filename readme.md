@@ -1,10 +1,10 @@
-# ToDo-list project created on Laravel Framework 5.4
+# Blog is project created on Laravel Framework 5.4
 
 ## Installation
 
 1)Clone the repository-
 
-git clone https://github.com/AleksTonyGit/LaraTask.git
+git clone https://github.com/AleksTonyGit/LaraBlog.git
 
 
 2)cd into the project folder with this command-
