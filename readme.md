@@ -2,39 +2,36 @@
 
 ## Installation
 
-Clone the repository-
-```
+1)Clone the repository-
+
 git clone https://github.com/AleksTonyGit/LaraTask.git
-```
-
-Then cd into the project folder with this command-
-```
-cd Laratask
-```
-
-run the command
-```
-composer install
-```
-
-Create a environment file using this command-
-```
-cp .env.example .env
 
 
-Then edit `.env` file with appropriate credential for your database server.
-Then create a database named `laratest`
+2)cd into the project folder with this command-
+
+"cd Laratask"
 
 
-run the command
-```
-php artisan migrate
-```
+3)run the command-
 
-run the command
-```
-php artisan serve
-```
+"composer install"
+
+
+4)Create a environment file using this command-
+
+"cp .env.example .env"
+
+
+5)Edit `.env` file with appropriate credential for your database server.
+
+6)Create a database named `laratest`
+
+
+7)php artisan migrate
+
+
+8)php artisan serve
+
 
 Go to `http://localhost:8000`
 
