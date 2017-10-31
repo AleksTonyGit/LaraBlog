@@ -1,6 +1,34 @@
-This ToDo list project was created on Laravel 5.4.
+# ToDo-list project created on Laravel Framework 5.4
 
-Installation:
+## Installation
 
 Clone the repository-
-https://github.com/AleksTonyGit/LaraTask.git
+```
+git clone https://github.com/AleksTonyGit/LaraTask.git
+```
+
+Then cd into the project folder with this command-
+```
+cd Laratask
+```
+
+run `composer install`
+```
+
+Create a environment file using this command-
+```
+cp .env.example .env
+```
+
+Then edit `.env` file with appropriate credential for your database server.
+Then create a database named `laratest`
+```
+php artisan migrate
+```
+
+php artisan serve
+```
+
+Go to `http://localhost:8000`
+
+If you have questions write me on AleksTonyGit@gmail.com
