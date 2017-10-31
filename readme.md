@@ -9,7 +9,7 @@ git clone https://github.com/AleksTonyGit/LaraBlog.git
 
 2)cd into the project folder with this command-
 
-"cd Laratask"
+"cd Larablog"
 
 
 3)run the command-
