@@ -12,20 +12,27 @@ Then cd into the project folder with this command-
 cd Laratask
 ```
 
-run `composer install`
+run the command
+```
+composer install
 ```
 
 Create a environment file using this command-
 ```
 cp .env.example .env
-```
+
 
 Then edit `.env` file with appropriate credential for your database server.
 Then create a database named `laratest`
+
+
+run the command
 ```
 php artisan migrate
 ```
 
+run the command
+```
 php artisan serve
 ```
 
