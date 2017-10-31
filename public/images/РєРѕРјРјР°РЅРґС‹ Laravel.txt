@@ -1,0 +1,13 @@
+php artisan make:model SocialGoogleAccount -m - создание модели с миграцией
+
+php artisan serve - запуск локального сервера
+
+composer create-project laravel/laravel НАЗВАНИЕ ПРОЕКТА --prefer-dist  - создание нового проекта
+
+php artisan make:migration create_category_table  - создание миграции
+
+composer require "laravelcollective/html":"^5.4.0" - подключение пакета для создания форм 
+Collective\Html\HtmlServiceProvider::class, - добавить в 'providers' (config/app.php)
+'Form' => Collective\Html\FormFacade::class,
+'Html' => Collective\Html\HtmlFacade::class, - добавить в 'aliases'(config/app.php)
+ 

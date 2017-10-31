@@ -1,0 +1,130 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+     margin-bottom: 30px;
+ }
+.title  a{
+    color: #636b6f;
+    text-decoration: none;
+}
+.block{
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #777;
+}
+.image {
+    height:300px;
+    /*width:300px;*/
+    margin:0;
+    /*float:left;*/
+    cursor:pointer;
+    max-height:100px;
+}
+
+.a {
+    display: inline-block;
+
+
+    padding:10px;
+}
+.buttons {
+    style="float:right"
+}
+.a:hover .buttons {
+    display: block;
+}
+
+.gallery-item-wrapper .hovergallery  img{
+    -webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+    -moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+    -o-transform:scale(0.8); /*Opera: масштабирование*/
+    -webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+    -moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+    -o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+    opacity: 1.0; /*Начальная прозрачность изображений*/
+    margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+
+.gallery-item-wrapper .hovergallery  img:hover{
+    -webkit-transform:scale(1); /*Webkit: увеличиваем размер до 1.2x*/
+    -moz-transform:scale(1.05); /*Mozilla: масштабирование*/
+    -o-transform:scale(1.05); /*Opera: масштабирование*/
+    box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+    -webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+    -moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+    opacity: 1;
+}
+.gallery-item-wrapper{
+    /*display: flex;*/
+    align-items: center;
+    justify-content: flex-start;
+}
+.gallery-item-wrapper p{
+    margin-bottom: 0;
+}
+
+.topic_title a{
+    text-decoration: none;
+    color: #636b6f;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.topic_title a:hover {
+    text-decoration: none;
+    color: #777;
+    background: #e7e7e7;
+}
+.topic_name{
+    padding-left: 30px;
+}
+.content{
+    padding-left: 10px;
+    text-align: left;
+}
