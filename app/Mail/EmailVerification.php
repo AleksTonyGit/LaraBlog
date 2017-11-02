@@ -26,6 +26,6 @@ class EmailVerification extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.verification')->to('tkachev.a.i.uk@gmail.com');
+        return $this->view('emails.verification');
     }
 }

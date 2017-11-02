@@ -8,23 +8,24 @@ use App\Models\Block;
 
 class TopicController extends Controller
 {
-    
+
+   /* отображение всех топиков на странице 'index'*/
     public function index()
     {
         $topics=Topic::all();
-        //dd($topics);
         $id=0;
         return view('topic.index',['page'=>'home','topics'=>$topics,'id'=>$id]);
     }
 
-   
+
+    /*форма создания нового Топика*/
     public function create()
     {
         $topic=new Topic;
         return view('topic.create',['topic'=>$topic]);
     }
 
-    
+    /*обработка формы создания нового Топика*/
     public function store(Request $request)
     {
         $topic=new Topic;
@@ -37,7 +38,8 @@ class TopicController extends Controller
             return redirect()->action('TopicController@create')->with('success',"Заголовок был добавлен с id=".$topic->id);
     }
 
-   
+
+   /*Отображение контента выбраного Топика*/
     public function show($id)
     {
         $blocks=Block::where('topicid','=',$id)->get();
@@ -45,19 +47,8 @@ class TopicController extends Controller
         return view('topic.index',['page'=>'Main page','topics'=>$topics,'id'=>$id,'blocks'=>$blocks]);
     }
 
-    
-    public function edit($id)
-    {
-        //
-    }
 
-    
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-   
+    /*удаление Топика*/
     public function destroy($id)
     {
         $topic=Topic::find($id);
@@ -66,7 +57,7 @@ class TopicController extends Controller
     }
 
 
-
+    /*поиск Топика*/
     public function search(Request $request)
     {
         $search=$request->searchform;   

@@ -15,6 +15,7 @@ class BlockController extends Controller
         //
     }
 
+    /*создание нового контента при условии "Логина" пользователя*/
     public function create()
     {
         if (!Auth::check()) 
@@ -26,7 +27,8 @@ class BlockController extends Controller
         return view('block.create',['block'=>$block,'topics'=>$topics,'page'=>'AddBlock']);
     }
 
-    
+
+    /*обработка создания нового контента*/
     public function store(Request $request)
     {
         $block=new Block;
@@ -55,7 +57,7 @@ class BlockController extends Controller
             return redirect()->action('BlockController@create')->with('message','New block '.$block->title. 'has been added!');
     }
 
-    
+    /*форма изменения контента*/
     public function edit($id)
     {
         $block=Block::find($id);
@@ -63,6 +65,8 @@ class BlockController extends Controller
         return view('block.edit')->with('block',$block)->with('topics',$topics)->with('page','Main Page'); 
     }
 
+
+    /*обработка изменений нового контента и запись в БД*/
     public function update(Request $request, $id)
     {
         $block=Block::find($id);
@@ -80,6 +84,8 @@ class BlockController extends Controller
 		    return redirect('topic/'.$block->topicid);
 	}
 
+
+	/*удаление контента*/
     public function destroy($id)
     {
         $block=Block::find($id);
